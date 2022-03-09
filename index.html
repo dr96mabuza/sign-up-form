@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="right">
+            <div class="logo"><img src="./images/odin-lined.png" alt=""></div>
+            <div class="image"><img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt=""></div>
+        </div>
+        <div class="left">
+            <div class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
+            <div class="text">You know you want to.</div>
+
+            <div id="form">
+                <form action="example.com/path" method="post">
+                    <fieldset>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Bongi....." required>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Momo...." required>
+                    </fieldset>
+    
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="You@example.com" required>
+                        <label for="cellphone">cellphone number</label>
+                        <input type="number" name="cellphone" id="cellphone" placeholder="+27 81 123 4567" required>
+                    </fieldset>
+    
+                    <fieldset>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                        <label for="confirm">Confirm Password</label>
+                        <input type="email" name="password" id="password" required>
+                    </fieldset>
+    
+                    <button type="submit">Create Account</button>
+
+                    <p class="log-in">Already have an account? <a href="./index.html">Log in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
