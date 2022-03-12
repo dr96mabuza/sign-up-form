@@ -4,47 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up form</title>
+    <title>Sign-up Form</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="container">
-        <div class="right">
-            <div class="logo"><img src="./images/odin-lined.png" alt=""></div>
-            <div class="image"><img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt=""></div>
-        </div>
-        <div class="left">
-            <div class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
-            <div class="text">You know you want to.</div>
-
-            <div id="form">
-                <form action="example.com/path" method="post">
-                    <fieldset>
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" placeholder="Bongi....." required>
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Momo...." required>
-                    </fieldset>
-    
-                    <fieldset>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="You@example.com" required>
-                        <label for="cellphone">cellphone number</label>
-                        <input type="number" name="cellphone" id="cellphone" placeholder="+27 81 123 4567" required>
-                    </fieldset>
-    
-                    <fieldset>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                        <label for="confirm">Confirm Password</label>
-                        <input type="email" name="password" id="password" required>
-                    </fieldset>
-    
-                    <button type="submit">Create Account</button>
-
-                    <p class="log-in">Already have an account? <a href="./index.html">Log in</a></p>
-                </form>
+    <div class="left">
+       <div class="image-container">
+           <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="">
+           <div class="center">
+                <img class="odin-lined" src="./images/odin-lined.png" alt="">
+                <p class="odin-text">ODIN</p>
             </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="top-section">
+            <p class="text-1">This is not a real online service! You know you need something like this in your life to help realize your deepest dreams.</p>
+            <p class="text-2">You know you want to.</p>
+        </div>
+        
+        <div class="mid-section">
+            <form action="" method="get" class="form-container">
+                <p class="form-text">Let's do this!</p>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" class="first-name">
+                    </div>
+                    <div class="form-column">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" class="last-name">
+                    </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-column">
+                        <label for="cellphone">Cellphone</label>
+                        <input type="tel" name="cellphone" id="cellphone">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    </div>
+                    <div class="form-column">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="bottom-section">
+            <button type="submit">Create Account</button>
+            <p class="text-3">already have an Account?<a href="./index.html"> Log in</a></p>
         </div>
     </div>
 </body>
