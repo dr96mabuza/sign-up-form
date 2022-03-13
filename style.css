@@ -13,10 +13,90 @@ body {
     flex-direction: column;
 }
 
+/*LEFT SIDE*/
 .left {
-    flex: 46%;
+    max-width: 500px;
+    height: 900px;
 }
 
+.background-image {
+    max-height: 900px;;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.center {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 18%;
+    width: 100%;
+    background-color: rgba(1,1,1,0.5);
+
+}
+
+.bottom {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 4px;
+}
+
+.by,
+.haile,
+.unsplash {
+    color: white;
+    font-size: x-small;
+}
+
+@font-face {
+    font-family: my-font;
+    src: url(./images/Norse-Bold.otf);
+}
+
+.odin-text {
+    font-family: my-font;
+    font-size: 100px;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+.odin-lined {
+    width: 20%;
+}
+
+.submit {
+    background-color: #596D48;
+    border-radius: 6px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.log-in {
+    color: #596D48;
+    text-decoration: none;
+}
+
+/*RIGHT SIDE*/
 .right{
     flex: 54%;
 
@@ -24,11 +104,7 @@ body {
     align-items: flex-start;
     justify-content: center;
 
-    background-color: white;
-}
-
-img {
-    width: 100%;
+    background-color: snow;
 }
 
 .top-section,
@@ -41,7 +117,9 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px
+    padding-top: 10px;
+    gap: 50px;
+    
 }
 
 .form-column {
@@ -53,14 +131,44 @@ img {
 .mid-section {
     width: 100%;
     padding: 11px;
+}
 
-    background-color: azure;
-    border:2px solid azure;
-    box-shadow: 2px;
+.mid-section {
+    box-shadow: 1px 1px 1px 1px #888888;
+    background-color: white;
+}
+
+label,
+.form-column input[type='text'],
+.form-column input[type='email'],
+.form-column input[type='password'],
+.form-column input[type='tel'] {
+    font-size: 13px;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-column input[type='text'],
+.form-column input[type='email'],
+.form-column input[type='password'],
+.form-column input[type='tel'],
+button {
+    border: 2px solid #e5e7eb;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form-column input[type='password'] {
+    border-color: red;
+}
+
+.form-column:last-child input[type='text'] {
+    border-color: blue;
 }
 
 .top-section, .bottom-section {
-    max-width: 650px;
+    width: 600px;
     padding: 25.5px;
 }
 
@@ -75,38 +183,7 @@ p {
 .text-1,
 .text-2,
 .text-3,
-a {
-    font-size: x-large;
-}
-
-.image-container {
-    position: relative;
-    width: 100%;
-    z-index: -1;
-}
-
-.center {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.9;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 30%;
-    background-color: transparent;
-
-}
-
-@font-face {
-    font-family: my-font;
-    src: url(./images/Norse-Bold.otf);
-}
-
-.odin-text {
-    font-family: my-font;
-    font-size: 100px;
-    color: white;
+a
+em {
+    font-size: large;
 }
